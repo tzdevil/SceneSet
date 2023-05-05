@@ -9,7 +9,7 @@ using UnityEngine;
 namespace tzdevil.SceneSet
 {
     [CreateAssetMenu(fileName = "Scene Set", menuName = "Create New/Scene Setx", order = 52)]
-    public class SceneSet : ScriptableObject
+    public class SceneSetSO : ScriptableObject
     {
         [field: SerializeField] public SceneAsset MainScene { get; set; }
         [field: Space(10)]
@@ -31,7 +31,7 @@ namespace tzdevil.SceneSet
         {
             var target = EditorUtility.InstanceIDToObject(instanceID);
 
-            if (target is not SceneSet)
+            if (target is not SceneSetSO)
                 return false;
 
             if (_scenePaths.Count == 0)
