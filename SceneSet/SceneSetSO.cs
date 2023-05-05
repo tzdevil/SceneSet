@@ -47,6 +47,15 @@ namespace tzdevil.SceneSet
 
             return false;
         }
+        
+        public void LoadSceneSet() {
+            EditorSceneManager.OpenScene(_scenePaths[0], OpenSceneMode.Single);
+            for (int i = 0; i < _scenePaths.Count; i++)
+            {
+                var sceneId = _scenePaths[i];
+                EditorSceneManager.OpenScene(sceneId, OpenSceneMode.Additive);
+            }
+        }
     }
 }
 #endif
