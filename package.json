@@ -4,5 +4,10 @@
     "description": "Scene Set is an Unity Package to load multiple scenes additively at once, with just one double-click. Developed by tzdevil",
     "version": "1.0.2",
     "unity": "2022.1",
+    "author": {
+        "name": "tzdevil",
+        "email": "champtzcsgo@gmail.com",
+        "url": "https://github.com/tzdevil/SceneSet"
+      },
     "type": "tool"
 }
