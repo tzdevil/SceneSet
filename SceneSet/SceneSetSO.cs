@@ -22,6 +22,8 @@ namespace tzdevil.SceneSet
             var mainScene = AssetDatabase.GetAssetPath(MainScene);
             var additiveScenes = AdditiveScenes.Select(s => AssetDatabase.GetAssetPath(s)).ToList();
 
+            Debug.Log(mainScene);
+
             _scenePaths.Add(mainScene);
             _scenePaths.AddRange(additiveScenes);
         }
