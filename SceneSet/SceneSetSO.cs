@@ -8,7 +8,7 @@ using UnityEngine;
 
 namespace tzdevil.SceneSet
 {
-    [CreateAssetMenu(fileName = "Scene Set", menuName = "Create New/Scene Setx", order = 52)]
+    [CreateAssetMenu(fileName = "Scene Set", menuName = "Create New/Scene Set", order = 52)]
     public class SceneSetSO : ScriptableObject
     {
         [field: SerializeField] public SceneAsset MainScene { get; set; }
